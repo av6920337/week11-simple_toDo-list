@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background:linear-gradient(90deg, #89a7d5,#89a7d5,#faf5f0);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px
+}
+.title{
+    color: #002765;
+    margin-bottom: 20px;
+}
+.main{
+    width: 100%;
+    max-width: 540px;
+    background: whitesmoke;
+    margin: 30px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+}
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main_Input{
+    border:none;
+    /* border-radius: 10px; */
+    outline: none;
+    background:transparent;
+    padding:10px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+.main_addBtn{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #002765;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+ul li{
+    /* display: flex;
+    flex-direction: column; */
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height:28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://cdn-icons-png.freepik.com/256/9369/9369792.png?ga=GA1.1.883863619.1701899872&semt=ais_hybrid);
+    background-size: cover;
+    background-position:center ;
+    top: 8px; 
+    top: 12px;
+    left:8px; 
+} 

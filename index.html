@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ToDo list</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="title">ToDo List</h1>
+    </header>
+    <main class="main">
+        <div id="myDiv" class="main_container">
+            <input type="text" id="myInput" placeholder=" Your task..." class="main_Input" onkeypress="handleKeyPress(event)">
+            <button id="addBtn" class="main_addBtn" onclick="addTask()">Add</button>
+        </div>
+        <div class="containerList">
+            <ul class="main_list">
+                <li>Say hi</li>
+            </ul>
+        </div>
+    </main>
+    <script src="assets/script/index.js"></script>
+</body>
+</html>
