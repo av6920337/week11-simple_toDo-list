@@ -52,12 +52,12 @@
 ul li{
     /* display: flex;
     flex-direction: column; */
-    list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 45px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    list-style-type: none;
 }
 ul li::before{
     content: '';
@@ -65,10 +65,32 @@ ul li::before{
     height:28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(https://cdn-icons-png.freepik.com/256/9369/9369792.png?ga=GA1.1.883863619.1701899872&semt=ais_hybrid);
+    background-image: url(https://cdn-icons-png.flaticon.com/128/10238/10238329.png);
     background-size: cover;
     background-position:center ;
     top: 8px; 
-    top: 12px;
     left:8px; 
 } 
+.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/1828/1828640.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    width: 40px;
+    height:40px;
+    font-size: 22px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:#edeef0;
+}
